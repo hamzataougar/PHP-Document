@@ -49,3 +49,14 @@ $array1 = array("color" => "red", 2, 4);
 $array2 = array("a", "b", "color" => "green", "shape" => "trapezoid", 4);
 $result = array_merge($array1, $array2);
 print_r($result);
+
+//array_map : Applique une fonction sur les elements d'un array 
+
+function cube($n)
+{
+    return ($n * $n * $n);
+}
+
+$a = [1, 2, 3, 4, 5];
+$b = array_map('cube', $a);
+print_r($b);
